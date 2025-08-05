@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
-  <title> Player</title>
+  <title>Player</title>
   <style>
       body {
           margin: 0;
@@ -14,16 +14,6 @@
       }
 
   </style>
-<script>
-function checkGeoM(b) {
-//var xmlhttp2 = new XMLHttpRequest();
-//var strUrl = "https://api.voodc.com/sbmcheck/"+b;
-//xmlhttp2.onreadystatechange = function() {}
-//xmlhttp2.open("GET", strUrl, true);
-//xmlhttp2.send();
-}
-</script>
-<script data-cfasync="false" type="text/javascript" src="https://voodc.com/avurcfe10.js?v88"></script>
 <script>
 var embedPlayer=true;
 </script>
@@ -36,7 +26,7 @@ var embedPlayer=true;
 
      <script>
 jwplayer.key = 'W7zSm81+mmIsg7F+fyHRKhF3ggLkTqtGMhvI92kbqf/ysE99';
-var PlayS = 'https://rho2.dbcast.live/nBxEkD4qHe2ymZnnfDErdQ/1754460153/323830303a6364303a316330353a613830303a356465323a616365343a666431633a32373862/ff402/playlist.m3u8?b=1';
+var PlayS = 'https://b2.dbcast.live/21937/hls/stream_720p.m3u8';
 
     var playerInstance = jwplayer("player");
     playerInstance.setup({
@@ -53,13 +43,11 @@ var PlayS = 'https://rho2.dbcast.live/nBxEkD4qHe2ymZnnfDErdQ/1754460153/32383030
         width: "100%",
         height: "100%",
 //        aspectratio: "16:9",
-//	mute: true,
         autostart: true,
 	liveTimeout: 30,
         aboutlink: "https://voodc.com",
         abouttext: "About",
-        liveSyncDuration: 12,
-        cast: {},
+        liveSyncDuration: 16,
     });
 
         </script>
@@ -109,7 +97,7 @@ embedPlayer = true;
 }
 });
 jwplayer().on('complete', function(){
-jwplayer().load({file:"https://rho2.dbcast.live/nBxEkD4qHe2ymZnnfDErdQ/1754460153/323830303a6364303a316330353a613830303a356465323a616365343a666431633a32373862/ff402/playlist.m3u8?b=1"});
+jwplayer().load({file:"https://b2.dbcast.live/21937/hls/stream_720p.m3u8"});
 });
 
 jwplayer().on('play', function(){
